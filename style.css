@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+header {
+    width: 1496px;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color:  rgb(5, 59, 80);
+}
+
+.head {
+    position: sticky;
+    z-index: 3;
+}
+
+.logo {
+    font-family: 'Autour One', cursive;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 0px 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+nav li a:hover {
+    color: rgb(17, 202, 218);
+    transition: all 0.3s;
+}
+
+.text {
+    position: absolute;
+    top: 500px;
+    color: black;
+    padding: 130px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+button {
+    font-size: 10px;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 19px;
+    background-color: lightseagreen;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+button:hover {
+    color: white;
+    transition: 1s;
+}
+
+.bg img{
+    width: 1496px;
+
+}
