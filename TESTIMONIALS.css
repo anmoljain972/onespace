@@ -10,7 +10,7 @@
 body{
     background-size: cover;
     background-position: center;
-    background-color:rgb(23, 107, 135);
+    background-image: url(image/contact.jpg);
 }
 header{
     width: 100%;
@@ -46,41 +46,84 @@ nav li a:hover{
     transition: all 0.3s;
 }
 
-.head{
-    position: fixed;
-    z-index: 3;
-    top: 0px;
-    background-color: rgb(5, 59, 80);
-}
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+    padding-top: 150px;
+    padding-left: 400px;
+  }
 
-.container{
-    margin-top: 120px;
-    margin-bottom: 100px;
-}
-
-.boxarea{
+  .wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+  .carousel :where(.card, .img) {
     display: flex;
-    flex-wrap: wrap;
-    width: 1496px;
-    padding: 0px 174px;
-    gap: 80px;
-}
-
-
-.singlebox{
-    border-radius: 17px;
-    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel .card {
+    scroll-snap-align: start;
+    height: 342px;
+    list-style: none;
+    background: #ffffff;
+    cursor: pointer;
+    padding-bottom: 16px;
     flex-direction: column;
+    border-radius: 8px;
+  }
+  .carousel .card .img {
+    background: #8B53FF;
+    height: 148px;
+    width: 148px;
+    border-radius: 50%;
+  }
+  .card .img img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+  }
+  .carousel .card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+  }
+  .carousel .card span {
+    color: #6A6D78;
+    
     text-align: center;
-    background-color: rgb(255, 255, 255);
-    height: 319px;
-    width: 327px;
-    padding: 33px;
-    gap: 13px;
-}
-
-.imagearea img{
-    height: 106px;
-    width: 105px;
-    border-radius: 50px;
+  }
+  @media screen and (max-width: 900px) {
+    .wrapper .carousel {
+      grid-auto-columns: calc((100% / 2) - 9px);
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .wrapper .carousel {
+      grid-auto-columns: 100%;
+    }
 }

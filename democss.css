@@ -19,7 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-    background-color:  rgb(5, 59, 80);
+    background-color:  rgb(0, 0, 0);
 }
 
 .head {
@@ -54,57 +54,60 @@ nav li a:hover {
     color: rgb(17, 202, 218);
     transition: all 0.3s;
 }
-body{
-    background-image: url("images/image5.jpg");
-     background-size: cover;
-     text-align: center;
+
+.main{
+
+ margin: 2%;
+}
+
+.card{
+     width: 20%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 2%;
+    }
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  
+
+ 
  }
+
+.title{
  
- .contact-form{
-     margin-top: 100px;
-     color: rgb(12, 14, 18);
-     text-transform: uppercase;
-     transition: all 4s ease-in-out;
+  text-align: center;
+  padding: 10px;
+  
  }
- 
- .contact-form h1{
-     font-size: 32px;
+
+h1{
+  font-size: 20px;
  }
+
+.des{
+  padding: 3px;
+  text-align: center;
  
- 
- form{
-     margin-top: 50px;
-     transition: all 1s ease-in-out ;
- }
- 
- .form-control{
-     width: 400px;
-     background: transparent;
-     border: none;
-     outline: none;
-     border-bottom: 1px solid gray;
-     color: #c62121;
-     font-size: 18px;
-     margin-bottom: 18px;
- }
- 
- 
- input{
-     height: 45px;
- }
- 
- form .submit{
-     background: #ff5722;
-     border: transparent;
-     color: #fff;
-     font-size: 20px;
-     font-weight: bold;
-     letter-spacing: 2px;
-     height: 50px;
-     margin-top: 20px;
- }
- 
- form .submit:hover{
-     background: #f44336;
-     cursor: pointer;
- }
+  padding-top: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+

@@ -7,7 +7,7 @@
 body{
     background-size: cover;
     background-position: center;
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(35, 45, 63);
 }
 header{
     width: 100%;
@@ -47,7 +47,7 @@ nav li a:hover{
     position: fixed;
     z-index: 3;
     top: 0px;
-    background-color: rgb(5, 59, 80);
+    background-color: rgb(0, 0, 0);
 }
 /* for navbar*/
 /*main section*/
@@ -62,7 +62,7 @@ nav li a:hover{
     font-weight: bold;
     margin-top: 30px;
     margin-bottom: 60px;
-    color: rgb(5, 59, 80);
+    color: rgb(255, 255, 255);
     ;
 }
 .aboutcontent{
@@ -85,6 +85,7 @@ nav li a:hover{
     transform: scale(1.1);
 }
 .content{
+    color: aliceblue;
     flex: 1;
     margin-left: 20px;
     font-size: 19px;
