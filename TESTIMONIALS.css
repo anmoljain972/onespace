@@ -19,7 +19,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-    background-color:rgba(4, 76, 107, 0.204);
+    background-color:rgba(0, 0, 0, 0.204);
 }
 .logo{
     font-family: 'Autour One', cursive;
@@ -95,7 +95,7 @@ nav li a:hover{
     border-radius: 8px;
   }
   .carousel .card .img {
-    background: #8B53FF;
+    background: #000000;
     height: 148px;
     width: 148px;
     border-radius: 50%;
