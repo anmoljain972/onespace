@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    width: 1496px;
+    /* width: 1496px; */
     height: 75px;
     display: flex;
     justify-content: space-between;
@@ -23,7 +23,7 @@ header {
 }
 
 .head {
-    position: sticky;
+    /* position: sticky; */
     z-index: 3;
 }
 
@@ -57,7 +57,8 @@ nav li a:hover {
 
 .text {
     position: absolute;
-    top: 500px;
+    top: 200px;
+    left: -10px;
     color: rgb(255, 255, 255);
     padding: 130px;
     font-size: 39px;
@@ -82,6 +83,9 @@ button:hover {
 }
 
 .bg img{
-    width: 1496px;
-
+    width: 100%;
+    height: 658px;
 }
+
+
+
