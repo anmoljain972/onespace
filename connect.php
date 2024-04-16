@@ -36,7 +36,7 @@ if (mysqli_query($conn, $sql)) {
     
 }
 else{
-    die("". mysqli_error($conn));
+    die("". mysqli_error($conn));   
 }
 
 mysqli_close($conn);

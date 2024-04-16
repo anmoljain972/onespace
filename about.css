@@ -7,7 +7,7 @@
 body{
     background-size: cover;
     background-position: center;
-    background-color:rgb(35, 45, 63);
+    background-color:rgb(255, 255, 255);
 }
 header{
     width: 100%;
@@ -63,7 +63,7 @@ nav li a:hover{
     margin-top: 30px;
     margin-bottom: 60px;
     color: rgb(255, 255, 255);
-    ;
+    
 }
 .aboutcontent{
     display: flex;
@@ -91,7 +91,7 @@ nav li a:hover{
     font-size: 19px;
     font-family:'Montserrat', sans-serif;
 }
-/*pg2*/
+/*pg2
 .section{
     width: 100%;
     min-height: 100vh;
@@ -105,4 +105,4 @@ nav li a:hover{
 .content-section{
     float: left;
     width: 40px;
-}
+}*/

@@ -64,7 +64,7 @@ nav li a:hover {
 .gallery-item {
     position: relative;
     overflow: hidden;
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
 }
 
 .gallery-item img {
